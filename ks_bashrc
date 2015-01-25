@@ -1,0 +1,20 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+set -o vi
+PATH=${PATH}:/home/kstevens/bin
+alias doc='cd /home/kstevens/Documents'
+alias dat='cd /home/kstevens/Documents/temp/testing'
+alias ext='cd /run/media/kstevens/'
+alias shut='sudo /sbin/shutdown -h now'
+alias reb='sudo /sbin/shutdown -r now'
+alias sus='sudo /usr/sbin/pm-suspend'
+alias clterm='cd;clear;history -c'
+alias lt='/bin/ls -ltr'
+alias tor='/home/kstevens/bin/tor-browser_en-US/start-tor-browser'
